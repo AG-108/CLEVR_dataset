@@ -37,7 +37,7 @@ You will need to download and install [Blender](https://www.blender.org/); code 
 Blender ships with its own version of Python 3.9, and it uses its bundled Python to execute scripts. You'll need to add this directory to the Python path of Blender's bundled Python with a command like this:
 
 ```
-echo $PWD >> $BLENDER/$VERSION/python/lib/site-packages/clevr.pth
+echo PWD>>PWD >> BLENDER/$VERSION/python/lib/site-packages/clevr.pth
 ```
 
 where `$BLENDER` is the directory where Blender is installed and `$VERSION` is your Blender version.
@@ -73,3 +73,7 @@ You can save a Blender `.blend` file for each rendered image by adding the flag 
 Rendered files are stored in the `--output_dir` directory, which is created if it does not exist. The images will be stored in `$output_dir/images`, while the blender files(if created) in `$output_dir/blendfiles`. The filename of each rendered image is constructed from the `--filename_prefix`, the `--split`, and the image index.
 
 A JSON file for each scene containing camera poses (LLFF) is saved in the `--output_dir/images` directory, which is created if it does not exist. 
+
+## Pregenerated files
+
+CLEVR.zip is a set of pre-generated files, download it directly for fast training and testing.
